@@ -1,1 +1,64 @@
 
+Sistemas Operativos ¿Que es? Caracteristicas, tipos, funcion, TODO sobre S.O.
+
+Resumen:
+El video comienza explicando la definición de sistema operativo describiendolo como un software que controla todos los programas y que además es el mediador entre el hardware del equipo y el usuario que lo este utilizando. Luego se da un ejemplo de que para que programas como Spotify, Office o Chrome se requiere de tener un sistema operativo, además menciona a Windows, Linux y MacOS como los sistemas operativos mas famosos y utilizados para los computadores.
+
+Luego se nos menciona que es gracias a los sistemas operativos que se le ha facilitado el uso de las computadoras a la gente común, ya que antes manejar una computadora era alguien que solo un ingeniero o alguien con cierta educación en el tema podía hacer. Esto se logra haciendo que el uso de los computadores sea comodo e interactivo.
+
+Las caractetisticas que debe tener un sistema operativo son:
+
+* Habilidad para evolucionar o en otras palabras abrir el camino para que se pueda mejorar el sistema.
+* Debe administrar el hardware.
+* Relacionar los perifericos entre sí y con el resto del hardware.
+* Organizar datos.
+* Manejar las comunicacioness.
+
+Se nos menciona que hay distintos tipos de sistemas operativos, cada uno enfocado a un dispositivo, tarea o función en especifico, estos tipos son:
+
+* Sistema operativo multitarea (los mas comunes hoy e día).
+* Sistema operativo monotarea.
+* Sistema operativo multiusuario.
+* Sistema operativo monousuario.
+
+Un sistema operativo debe tener un entorno en el cual usuario pueda interactuar.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Historia de los Sistemas Operativos
+
+Resumen:
+
+El primer sistema ioerativo fue el CDSS en el MIT en 1961. Los siguientes sistemas operativos que fueron saliendo fueron el EXEC (2 y 8) creado por CSC, el OS360 creado por IBM y UNIX, resaltando este último debido a que apartir de este se basaron muchos otros sitemas operativos. 
+
+El siguiente sistema operativo importante fue el Apple Dos, siendo el primer sistema operativo de la compañia Apple para rivalizar con IBM y posteriormente con Windows.
+
+Estos sistemas operativos fueron implementando principalmente interfaces para facilitarle el uso al usuario.
+
+Luego, MSDOS sería el punto de partida de Microsoft, siendo este una copia de otro sistema operativo llamado QDOS.
+
+LisaOS sería el siguiente sistema operativo de Apple, siendo este controversial debido a que se dice que el siguiente sistema operativo de Microsoft era muy parecido a este.
+
+MacOS es el sistema operativo insignia de Apple, el cual han ido actualizando hasta el día de hoy. Este se desarrolló en 1984.
+
+Linux  nació en 1991, este es el sistema operativo de software libre mas importante hasya el día de hoy.
+
+Windows 95, creado por Microsoft fue muy controversial debido a su gran parecido a los sistemas operativos de Apple, sin embargo es uno de los sistemas operativos mas exitosos.
+
+Ubuntu Linux es la distribución mas famosa de Linux, la cual fue creada en 2004.
+
+iOS es el sistema operativo que creó Apple para sus smartphones en 2009. Este se sigue utilizando hasta el día de hoy.
+
+Android vendría siendo la contraparte de iOS, ya que este tambien es para dispositivos moviles o smartphones.
+
+Windows 10 Es el sistema operativo por excelencia para computadores personales creado por Microsoft. Este es el mas común hasta el día de hoy. Este fue creado en 2016, siendo el último sistema operativo que ha sacado Microsoft.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
