@@ -1,0 +1,168 @@
+    Microkernel - Estructuras de sitemas operativos
+
+Un sistema operativo es un intermediario entre el usuario y el hardware, siendo este un programa. 
+
+El microkernel es el nucleo de la estructura del sistema operativo, este destaca por solo contener los componentes indispensables para el correcto funcionamiento del sistemas operativo.
+El microkernel se ejecuta con cierto privilegio para proveer los servicios escenciales. Este nucleo solo contiene unos pocos mecanismos para acceder al hardware. 
+La estructura del microkernel se puede dividir  en dos modos, el modo usuario que se encarga de los servicios del sistema y el kernel (el cual contiene el microkernel).
+En dicho modo usuario tanto los servicios de sistema y las aplicaciones se encuentran con el mismo privilegio, teniendo ciertas separaciones entre sí, funcionando cada uno de manera independiente en forma de módulos.
+El microkernel está protegidio de los servicios y aplicaciones al estar en modokernel, el cual le permite estar aislado de estos últimos.
+Además, las aplicaciones y los servicios no se comunican de forma directa, sino que el microkernel hace de mediador entre los dos.
+
+Ventajas microkernel
+*El sistema operativo se puede icrementar facilmente.
+*Se puede agrgar mas aplicaciones en el modo usuario.
+*Al estar asilados el kernel, los servicios y las aplicaciones, el sistema es mas seguro.
+*El kernel pequeño permite que la corrección de fallas sea sencilla.
+
+
+Desventajas microkernel
+*El rendimiento es bajo debido a que se realizan mas procesos debido a su estructura.
+*Sincronizar los distintos modulos es complejo.
+
+Ejemplos
+
+* Minix
+Desarrollado en 1987, el cual soportaba multiprocesos, multiusuarios y ademas es tolerante a fallas. Este se comparte muchas caracteristicas con Unix.
+Su estructura se divide por niveles. El primero es el kernel, el cual está programado en lenguaje ensamblador y C. La segunda etapa maneja los drivers del dispositivo.
+El tercer nivel se ocupa del manejo de memoria, ficheros y servidor de red. Este tiene un privilegio inferior a los niveles 1 y 2. Por última la cuarta etapa o nivel tiene los procesos del usuario, ademas de los compliadores y demas. 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Estructura de los Sistemas Operativos
+
+
+La arquitectura de un computador a pesar de que tiene ciertos componentes que se repiten, tiende a diferir a medida del hardware que maneja dicha arquitectura.
+Dentro de estos componentes que se repiten podemos ver el nucleo y las llamadas al sistema. Los diseños o estructuras que se han llevado a la práctica fueron:
+
+*Los sistemas monolíticos:
+	-Son los mas comunes por su sencillez.
+	-Todos los programas que se pueden ejecutar ya están escritos en un único código.
+	-El núcleo se puede considerar que es el mismo sistema operativo.
+
+	Ventajas
+	-El sistema es bastante veloz y eficaz, esto debido a que todos los componentes del SO comparten privilegios.
+
+	Desventajas
+	-La ejecutarse todo el sistema en el mismo nivel el sistema es mas propenso a fallos.
+
+*Los sistemas por capas:
+	-El objetivo de esta arquitectura es separar los procesos de usuario de los procesos del nucleo.
+	-Existen ciertas restricciones en las llamadas al sistema, esto con el fin de evitar que un proceso pueda llamar al sistema requiriendo de un componente en un nivel inferior.
+	-Por lo general existen seis niveles.
+	
+	Ventajas
+	-Se pueden depurar y verificar los procesos por capas, permitiendo cierta seguridad frente a los fallos.
+	
+	Desventajas
+	-Hay un mayor consumo de recursos.
+	-Las llamadas entre capas requieren mas llamadas al sistema.
+
+*Los sistemas de Micronúcleo:
+	-Esta intenta obtener lo mejor de los sistemas monolíticos y de los sistemas por capas, combinando el rendimiento de los primeros con la organización de los segundos.
+	-Este consiste en tener un núcleo pequeño y eficaz, manejando el resto de funciones como procesos de aplicación, teniendo estos últimos un priilegio inferior.
+	
+	Ventajas
+	-Los posibles fallos no se propagan por todo el sistema, quedando estos solo dentro de su módulo.
+	-Es facil crear y depurar drivers de dispositivos.
+
+	Desventajas
+	-Es complejo sincronizar todos los módulos del sistema.
+	-Al tener un código complejo, este sistema da un mal rendimiento y tiene ciertas limitaciones.
+	
+
+*Los sistemas cliente-servidor:
+	-El objetivo del núcleo en esta arquitectura es garantizar la comunicación entre procesos.
+	-En cada sistema solo estarán el núcleo y unos pocos componentes escenciales para la ejecución de algunos procesos.
+	
+	Ventajas
+	-El control del sistema recae en un servidor central, lo que permite que un programa cliente defectuoso no afecte el sistema.
+	-Es facil de aumentar la capacidad del sistema.
+	-Es facil el mantenimiento y actualización del sistema.
+
+	Desventajas
+	-El software y el hardware que utiliza es muy especifico.
+	-Puede haber congestión de tráfico.
+	-Este sistema no es muy robusto.
+  
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+      Sistemas Operativos - Clase 1 - Arquitectura de Sistemas Operativos
+  
+  Los primeros sistemas operativos nacen debido a la necesidad de facilitar la interacción entre el usuario y la máquina o computador, ya que en ese entonces el uso de estas máquinas
+estaba limitado a unos pocos expertos en el tema. Estos sistemas operativos ademas de facilitar el uso de los computadores permitió la ejecución y uso de otros programas para el computador.
+
+Los nuevos sistemas operativos se encargaban de automáticamente administrar, modificar y leer la memoria del dispositivo, ademas de en general administrar los recursos. Junto a estos nacieron
+Los monitores residentes, los cuales son los precursores de lo que serían las terminales que tienen los sistemas operativos de hoy en día, terminales desde las cuales el usuario puede realizar
+distintas acciones como descargar nuevos programas, ejecutarlos, etc.
+
+Las funciones de un sistema operativo son:
+-Administrar recursos
+-Hacer una abstracción del hardware.
+-Ofrecer una interfaz de supervisión.
+
+Ademas, un sistema operativo puede tener distintas caracteristicas, las cuales pueden variar dependiendo del dispositivo para el que esté diseñado,
+Pero en general, las carateristicas de un sistema operativo moderno son:
+-Ser multitarea.
+-Ser multiusuario.
+-Ser capaz de tener distintos hilos de procesamiento (multiprocesamiento).
+
+Con el fin de darle robustez al sistema se crea el sistema por anillos de ejecución, el cual le permite al procesador distinguir los distintos procesos del sistema entero, dandole
+así distintos privilegios a los distintos anillos dependiendo de su importancia.
+El programa que ejecuta el computador es parte del anillo 1. Desde este se salta a otros anillos para manejar los otros procesos.
+
+Una interrupcion es un mecanismo mediante el cual podemos interrumpir el CPU. Este es indispensable para que exista la multitarea. Existen distintos tipos de interrupciones, como por ejemplo:
+
+*Interrupciones por hardware (algun dispositivo externo y conectado al procesador interrumpe el CPU a travez de unas lineas de solicitud de interrupción).
+*Interrupciones por excepcion (el procesador se interrumpe a si mismo).
+*Interrupciones por software (el programa que se está ejecutando se interrumpe).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+    Sistemas Operativos - Clase 1 - Arquitectura de Sistemas Operativos
+
+ La arquitectura de un sistema operativo mas antigua es sistema operativo monolítico, lo cual se llama así porque todo el código del SO corre en el primer anillo del procesador y todo se
+guarda en el mismo mapa de memoria. Este sistema se divide en tres capas. La primera capa es el cual se encarga del hardare. La última capa son los procesos de usuario, los cuales interactuan con el
+sistema operativo. Cabe resaltar que esto procesos solo pueden interactuar con el sistema operativo, no pueden interactuar entre ellos ni con el hardware de forma directa, solo
+pueden atravez del SO. Las llamadas al sistema son los mecanismos que se implementan con interrupciones por software que hace que los procesos y el SO se puedan enviar informacion. 
+
+Los controladores son las rutinas que interactuan con el hardware. Estos son los que se encuentran en la primera capa del sistema operativo. Por otro lado, las abstracciones y los administradores
+son parte de la capa intermedia del sistema operativo. Un ejemplo de sistema monolítico es Linux.
+
+Ventaja sistema monolítico:
+*Eficiencia en la comunicacion entre los componentes del núcleo.
+
+Desventaja sistema monolítico:
+*El sistema es propenso al "efecto mariposa" durante la programación, lo cual significa que un pequeño cambio en un programa puede generar un completo
+caos en el resto del sistema, lo cual hace el sistema menos flexible. esto se puede mitigar siendo ordenado y con esquemas de pruebas de regresión.
+
+Por otro lado tenemos la arquitectura microkernel, la cual consiste en tener un kernel o núcleo pequeño, teniendo solo lo indispensable, como lo sería la protección de memoria,
+la planificación de procesos e hilos y el mecanismo de comunicación entre procesos.
+
+Ventaja sistema Microkernel:
+*No existe el efecto mariposa debido a su modularidad.
+*No hay tanto acoplamiento entre componentes.
+*El diseño es en general mas flexible y robusto.
+
+Desventajas sistema Microkernel:
+*Es ineficiente debido a un cuello e botella en el mecanismo de comunicación entre procesos.
+
+Unos ejemplos de esta arquitectura son:
+*Windows NT
+*GNU Hurd
+
+Conforme los sistemas operativos iban avanzando, se iban creando nuevos conceptos y abstracciones como por ejemplo la memoria secundaria, la cual es una memoria que se conecta
+de forma indirecta al procesador a través de un bus de entrada y salida.
+
+Otra abstraccion es un dispositivo de bloque. Este tiene caracteristicas como:
+*Acceos aleatoria de granularidad gruesa, lo cual significa que el acceso a los datos se da por bloques de muchos bytes.
+*Tiene una capacidad finita.
+*Tiene un direccionamiento lineal, lo que quiere decir que para acceder a un bloque se requiere de una dirección.
+
+Un ejemplo de dispositivo que usa esta abstracción es el disco de almacenamiento.
+
+Tambien existen los dispositivos de caracter, los cuales:
+*Solo tienen acceso secuencial.
+*Permite la lectura y escritura de caracteres.
+
+  
