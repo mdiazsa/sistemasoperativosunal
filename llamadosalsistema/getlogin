@@ -1,0 +1,3 @@
+os.getlogin()
+
+Se veduelve el nombre del usuario que controla la terminal del dispositivo durante el proceso.
