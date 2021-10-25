@@ -1,0 +1,3 @@
+os.remove()
+
+Se elimina la dirección de archivo que se haya introducido como parámetro. Si la dirección es un directorio, el error IsADirectoryError surge.
