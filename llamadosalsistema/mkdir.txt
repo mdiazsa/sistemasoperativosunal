@@ -1,0 +1,4 @@
+os.mkdir()
+
+La función crea un directorio con el nombre dado como primer parámetro.
+Si el directorio ya existe, surge el error FlieExistError.
