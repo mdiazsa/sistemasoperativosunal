@@ -1,0 +1,3 @@
+os.dup()
+
+Devuelve un duplicado del descriptor del archivo que se haya insertado como parámetro de la función.
