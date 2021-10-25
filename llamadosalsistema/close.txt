@@ -1,0 +1,3 @@
+os.close()
+
+Cierra el descriptor del archivo que se introduzca en la función.
