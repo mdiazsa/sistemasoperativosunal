@@ -1,0 +1,4 @@
+os.listdir()
+
+Devuelve una lista en la que se encuentran los nombres de las entradas al directorio dado por el parámetro introducido en la función.
+La lista se encuentra en un orden arbitrario y no incluye algunas entradas especiales.
