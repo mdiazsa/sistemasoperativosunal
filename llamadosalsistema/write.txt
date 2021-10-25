@@ -1,0 +1,4 @@
+os.write()
+
+Se le introducen dos parámetros. La función escribirá un string según el primer parámetro en el descriptor del archivo introducido
+como segundo parámetro. La función devolverá la cantidad de bytes que han sido escritos.
