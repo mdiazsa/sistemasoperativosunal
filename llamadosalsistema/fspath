@@ -1,0 +1,5 @@
+Os.fspath()
+
+Este devuelve la representación de la direccion de un archivo del sistema.
+Devuelve el mismo tipo de dato que recibe, siendo los únicos parametros admitidos los
+string y los bytes, de lo contrario, surge un error tipo TypeError.
