@@ -1,0 +1,4 @@
+os.removedirs()
+
+Se elimina el directorio introducido como parámetro de manera recursiva. Si el directorio hoja se elimina con exito, la función tratará remover 
+todo directorio padre hasta que surga un error.
