@@ -1,0 +1,5 @@
+os.read()
+
+Se le indroducen dos parámetros. El primero es un arhcivo y el segundo un numero entero.
+La función leera la cantidad de bytes que se haya introducido en el segundo parámetro en el archivo
+que se introdujo en el primer parámetro. Se devuelve un string que contenerá los bytes leidos.
