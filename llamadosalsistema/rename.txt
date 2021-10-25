@@ -1,0 +1,4 @@
+os.rename()
+
+Se renombra el archivo o directorio introducido como el primer parámetro con el nombre dado como segundo parámetro.
+Si ya existe un archivo con el nuevo nombre, la función falla, surgiendo el error OSError.
