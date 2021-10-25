@@ -1,0 +1,3 @@
+os.chdir()
+
+Se cambia el directorio de trabajo que se está usando por uno nuevo introducido como parámetro.
