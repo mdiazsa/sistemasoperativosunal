@@ -1,0 +1,1 @@
+Devuelve la máscara de usuario que se está usando en el momento y se devuelve a la máscara anterior.
