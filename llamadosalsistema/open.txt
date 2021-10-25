@@ -1,0 +1,3 @@
+os.open()
+
+Abre el documento cuya dirección haya sido introducida en la función. Además, se pueden introducir distintas banderas dependiendo del modo en el que se ejecute.
