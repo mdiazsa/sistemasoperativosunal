@@ -1,0 +1,10 @@
+os.uname()
+
+Se devuelve la información del sistema operativo donde se ejecute. 
+Exactamente devuelve un objeto con cinco atributos, los cuales son:
+
+1) sysname: nombre del sistema operativo
+2) nodename: nombre de la maquina en la red.
+3) release: fecha de salida del sistema operativo.
+4) version: versión del sistema operativo.
+5) machine: identificador del hardware.
