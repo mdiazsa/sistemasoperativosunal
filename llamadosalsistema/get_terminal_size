@@ -1,0 +1,4 @@
+os.get_terminal_size()
+
+Se devuelve el tamaño de la ventana del terminal en forma de tupla. Se le puede introducir
+un parámetro opcional que especifique cual es el descriptor de archivo que debe ser consultado.
