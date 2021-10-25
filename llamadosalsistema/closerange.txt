@@ -1,0 +1,4 @@
+os.closerange()
+
+Se introducen dos documentos. La función cerrará todos los descriptores de los documentos entre ambos documentos,
+ignorando los posibles errores que se puedan generar. 
