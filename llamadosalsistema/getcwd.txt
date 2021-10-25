@@ -1,0 +1,3 @@
+os.getcwm()
+
+Devuelve un string que representa el directorio de trabajo que se usa en el momento.
