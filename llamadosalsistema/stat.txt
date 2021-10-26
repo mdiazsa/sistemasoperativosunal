@@ -1,0 +1,4 @@
+os.stat()
+
+Obtiene el estado del archivo o el descriptor del archivo de la dirección introducida como parámetro.
+La dirección se debe introducir como un string o en forma de bytes.
