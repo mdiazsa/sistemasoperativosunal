@@ -1,0 +1,3 @@
+os..replace()
+
+Se renombra el archivo o directorio del primer parámetro por el del segundo. Si el segundo parámetro es un directorio, el error OSError surgirá.
