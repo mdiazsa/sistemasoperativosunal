@@ -20,12 +20,12 @@ async def peticion(ruta):
     socketCliente.send(ruta)
 
     mensaje = socketCliente.recv(4096)
-    print(mensaje.decode())
 
 
-def interprete():
-    print("WOP")
-    #La función interprete filtra la información recibida para solo imprimir lo que da la API
+    mensaje = mensaje[mensaje.find(b"{"):]
+    print("Se recibe del servidor el siguiente .JSON: " + mensaje.decode())
+
+
 
 async def main():
     # Se crea un nuevo task por cada peticion que se le hace  la API
